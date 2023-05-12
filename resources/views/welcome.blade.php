@@ -22,6 +22,22 @@
             margin: 0
         }
 
+        input {
+            background-color: greenyellow;
+            /* Green */
+            border: grey;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 6px 6px;
+            cursor: pointer;
+            font-weight: bolder;
+
+        }
+
         a {
             background-color: transparent
         }
@@ -392,12 +408,12 @@
 
 <body class="antialiased">
     <div class="relative flex items-top justify-center min-h-screen bg-gray white sm:items-center py-4 sm:pt-0">
-        <h3>Test Chapa Integration with 200.00 ETB</h3>
+        <h3>Testing Chapa Integration with 200.00 ETB payment </h3>
         {{-- add the action route --}}
         <form method="POST" action="{{route('pay')}}" id="paymentForm">
             @csrf
-            <input  class="rounded bg-neutral-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase bg-black" type="submit" value="Buy"
-                />
+            <input class="rounded bg-neutral-800 px-6 pb-2 pt-2.5 text-xs font-medium uppercase bg-black" type="submit"
+                value=" Buy Now!" />
         </form>
     </div>
 </body>
